@@ -20,45 +20,60 @@ h1 {
 
 
 .container {
-    height: 340%;
-    width: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     flex-direction: column;
+    
   }
 
   .flex-grid {
-    height: 100%;
+    align-self: center;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+   
+
+   
 
   }
 .col-left {
-    height: 100%;
+    height: fit-content;
     width: 48%;
-    flex-direction: row;
-    flex-shrink: 0;
+    flex-direction: column;
     gap: 30px;
+ 
   }
 .col-right {
-    height: 100%;
+    height: fit-content;
+
     width: 48%;
-    flex-direction: row;
-    flex-shrink: 0;
+    flex-direction: column;
     gap: 30px;
   }
 
 .pic-box {
-    height: 320px;
+    margin: 10px;
+    height: 40%;
     width: 100%;
-    flex-shrink: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 30px;
+    
+
+    img{
+        border-radius: 20px;
+        width: 50%;
+        height: 100%;
+        
+    }
   }
+
+iframe{
+    margin: 10px;
+}
 
 .s1{
     position  : absolute;
@@ -91,12 +106,12 @@ h1 {
 .yes {
     color: darkslategray;
     background-color: pink;
-    width: 200px
+    width: 50%;
 }
 
 .no {
     color: pink;
     background-color: darkslategray;
-    width: 20px;
+    width: 5%;
     font-size: 5pt;
 }
